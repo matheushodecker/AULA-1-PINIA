@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useProductStore = defineStore('product', () => {
@@ -8,5 +8,16 @@ export const useProductStore = defineStore('product', () => {
     {id: 3, name: 'o', price: 59.99, qty:100}
   ])
 
-  return { products }
+function getProductsById(id) {
+  for (let product of products.value){
+    if(product.id == id){
+      return product
+  }
+}
+return null
+
+//return porducts.value.find((product) => product.id == id)
+}
+
+  return { products, getProductsById }
 })

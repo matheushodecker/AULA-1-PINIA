@@ -36,4 +36,8 @@ function Visualizar(id) {
     </table>
   </main>
 </template>
-<style scoped></style>
+<style scoped>
+template{
+
+  background: radial-gradient(closest-side, black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white);
+}</style>
