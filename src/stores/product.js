@@ -19,5 +19,11 @@ export const useProductStore = defineStore('product', () => {
     //return porducts.value.find((product) => product.id == id)
   }
 
-  return { products, getProductById }
+
+
+function deleteProductById(id) {
+  const pos = products.value.findIndex((product) => product.id == id)
+  products.value.splice(pos, 1)
+}
+  return { products, getProductById, deleteProductById }
 })

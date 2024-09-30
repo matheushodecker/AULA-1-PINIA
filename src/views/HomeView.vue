@@ -31,13 +31,17 @@ function Visualizar(id) {
           <td>{{ product.price }}</td>
           <td>{{ product.qty }}</td>
           <button @click="Visualizar(product.id)">ver</button>
+          <button @click="productStore.deleteProductById(product.id)">excluir</button>
         </tr>
       </tbody>
     </table>
   </main>
 </template>
 <style scoped>
-template{
 
-  background: radial-gradient(closest-side, black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white);
-}</style>
+
+.ain{
+  background-color: radial-gradient(closest-side, black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white,black, white);
+}
+
+</style>
