@@ -22,3 +22,6 @@ onMounted(() => {
     <h2>{{ product.qty }}</h2>
    
 </template>
+<style scoped>
+
+</style>

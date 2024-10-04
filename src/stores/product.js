@@ -29,7 +29,7 @@ function deleteProductById(id) {
 
   function addProduct(name, price, qty) {
     const newProduct = {
-      id: products.value.length + 1, // Incrementa o ID
+      id: products.value.length + 1,
       name,
       price,
       qty
