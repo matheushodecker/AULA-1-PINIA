@@ -9,6 +9,8 @@ onMounted(() => {
     product.value = productStore.getProductById(props.id)
 
 })
+
+
 </script>
 
 

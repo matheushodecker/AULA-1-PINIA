@@ -25,5 +25,19 @@ function deleteProductById(id) {
   const pos = products.value.findIndex((product) => product.id == id)
   products.value.splice(pos, 1)
 }
-  return { products, getProductById, deleteProductById }
+
+
+  function addProduct(name, price, qty) {
+    const newProduct = {
+      id: products.value.length + 1, // Incrementa o ID
+      name,
+      price,
+      qty
+    };
+    products.value.push(newProduct);
+  }
+
+  return { products, getProductById, deleteProductById, addProduct }
 })
+
+
